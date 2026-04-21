@@ -5,52 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>سيرتي الذاتية | هاجر أحمد حسن</title>
     <style>
+        /* تنسيقات عامة للصفحة */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            background-color: #f4f4f9;
+            background-color: #f0f2f5;
             color: #333;
-            max-width: 800px;
-            margin: 20px auto;
+            max-width: 850px;
+            margin: 30px auto;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
+
+        /* الهيدر (رأس الصفحة) */
         header {
             text-align: center;
             background: #2c3e50;
             color: white;
-            padding: 20px;
-            border-radius: 10px 10px 0 0;
+            padding: 30px;
+            border-radius: 15px 15px 0 0;
+            border-bottom: 5px solid #3498db;
         }
-        header h1 { margin: 0; }
+        header h1 { margin: 0; font-size: 2.2em; }
+        header p { margin: 10px 0; font-size: 1.1em; opacity: 0.9; }
+
+        /* الأقسام الأساسية */
         section {
             background: white;
-            padding: 20px;
-            margin-top: 10px;
-            border-radius: 5px;
+            padding: 25px;
+            margin-top: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
+
         h2 {
             color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 5px;
+            border-right: 5px solid #3498db;
+            padding-right: 15px;
+            margin-top: 0;
+            font-size: 1.5em;
         }
-        ul { list-style-type: square; }
+
+        /* القوائم والروابط */
+        ul { list-style-type: none; padding: 0; }
+        ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        ul li:last-child { border-bottom: none; }
+        ul li::before {
+            content: "✔";
+            color: #3498db;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        .project-box {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px dashed #3498db;
+        }
+
         a { color: #3498db; text-decoration: none; font-weight: bold; }
-        a:hover { text-decoration: underline; }
+        a:hover { color: #2980b9; text-decoration: underline; }
+
+        .contact-info a { color: #ecf0f1; }
     </style>
 </head>
 <body>
 
     <header>
         <h1>هاجر أحمد حسن</h1>
-        <p>بكالوريوس تجارة | متخصص في التقنية الرقمية وإنشاء المنصات التعليمية</p>
-        <p>البريد الإلكتروني: <a href="mailto:hagaar03@gmail.com" style="color: #bdc3c7;">hagaar03@gmail.com</a></p>
+        <p>بكالوريوس تجارة | شعبة محاسبة</p>
+        <div class="contact-info">
+            <p>📱 رقم الهاتف: 01007871947</p>
+            <p>📧 البريد الإلكتروني: <a href="mailto:hagaar03@gmail.com">hagaar03@gmail.com</a></p>
+        </div>
     </header>
 
     <section>
         <h2>نبذة عني</h2>
-        <p>أنا شغوفة بالتعلم الذاتي، أعمل حالياً في المجال التعليمي وأتخصص في إنشاء وتطوير المنصات التعليمية للمعلمين. أسعى لدمج مهاراتي في بكالوريوس التجارة مع البرمجة لبناء حلول رقمية ذكية.</p>
+        <p>أنا شغوفة بالتعلم الذاتي، أعمل حالياً في إنشاء وتطوير المنصات التعليمية للمعلمين. أسعى لدمج مهاراتي في بكالوريوس التجارة (شعبة محاسبة) مع مهارات البرمجة والتقنيات الرقمية لبناء حلول ذكية ومبتكرة.</p>
     </section>
 
     <section>
@@ -65,16 +100,16 @@
 
     <section>
         <h2>مشاريعي</h2>
-        <div>
+        <div class="project-box">
             <h3>موقع شخصي على GitHub</h3>
-            <p>قمت ببناء ونشر صفحة هبوط تفاعلية لعرض أعمالي باستخدام GitHub Pages.</p>
-            <a href="https://hagaar03.github.io/test/" target="_blank">زيارة المشروع</a>
+            <p>مشروع صفحة هبوط تفاعلية قمت ببرمجتها ونشرها لعرض أعمالي.</p>
+            <a href="https://hagaar03.github.io/test/" target="_blank">🔗 معاينة المشروع</a>
         </div>
     </section>
 
     <section id="contact">
         <h2>تواصل معي</h2>
-        <p>يسعدني التواصل لمناقشة فرص العمل أو التعاون في المشاريع التعليمية والتقنية.</p>
+        <p>يسعدني التواصل لمناقشة فرص التعاون في المشاريع التعليمية، التقنية، أو المحاسبية.</p>
     </section>
 
 </body>
