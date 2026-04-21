@@ -3,156 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صفحة هبوط احترافية</title>
+    <title>سيرتي الذاتية | هاجر أحمد حسن</title>
     <style>
-        /* التنسيقات العامة */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
+            background-color: #f4f4f9;
             color: #333;
-            background-color: #f4f7f6;
-        }
-
-        /* الهيدر */
-        header {
-            background: #ffffff;
-            padding: 1rem 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #2c3e50;
-        }
-
-        /* القسم الرئيسي (Hero Section) */
-        .hero {
-            background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), 
-                        url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-            background-size: cover;
-            background-position: center;
-            height: 80vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-            padding: 0 20px;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            max-width: 600px;
-        }
-
-        .cta-button {
-            background-color: #27ae60;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.1rem;
-            transition: background 0.3s;
-        }
-
-        .cta-button:hover {
-            background-color: #219150;
-        }
-
-        /* قسم المميزات */
-        .features {
-            padding: 4rem 5%;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            background: #fff;
-        }
-
-        .feature-box {
-            text-align: center;
-            padding: 2rem;
-            border: 1px solid #eee;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
             border-radius: 10px;
-            transition: transform 0.3s;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-
-        .feature-box:hover {
-            transform: translateY(-5px);
-        }
-
-        .feature-box h3 {
-            margin-bottom: 1rem;
-            color: #2c3e50;
-        }
-
-        /* الفوتر */
-        footer {
+        header {
+            text-align: center;
             background: #2c3e50;
             color: white;
-            text-align: center;
-            padding: 2rem 0;
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
         }
-
-        /* تجاوب الجوال */
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2rem; }
-            .hero p { font-size: 1rem; }
+        header h1 { margin: 0; }
+        section {
+            background: white;
+            padding: 20px;
+            margin-top: 10px;
+            border-radius: 5px;
         }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        ul { list-style-type: square; }
+        a { color: #3498db; text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
 
     <header>
-        <div class="logo">شعاري</div>
-        <nav>
-            <a href="#features" style="text-decoration: none; color: #333;">المميزات</a>
-        </nav>
+        <h1>هاجر أحمد حسن</h1>
+        <p>بكالوريوس تجارة | متخصص في التقنية الرقمية وإنشاء المنصات التعليمية</p>
+        <p>البريد الإلكتروني: <a href="mailto:hagaar03@gmail.com" style="color: #bdc3c7;">hagaar03@gmail.com</a></p>
     </header>
 
-    <section class="hero">
-        <h1>حوّل أفكارك إلى واقع ملموس</h1>
-        <p>نحن نقدم أفضل الحلول التقنية لتطوير أعمالك وزيادة مبيعاتك من خلال استراتيجيات مبتكرة.</p>
-        <a href="#" class="cta-button">ابدأ الآن مجاناً</a>
+    <section>
+        <h2>نبذة عني</h2>
+        <p>أنا شغوفة بالتعلم الذاتي، أعمل حالياً في المجال التعليمي وأتخصص في إنشاء وتطوير المنصات التعليمية للمعلمين. أسعى لدمج مهاراتي في بكالوريوس التجارة مع البرمجة لبناء حلول رقمية ذكية.</p>
     </section>
 
-    <section id="features" class="features">
-        <div class="feature-box">
-            <h3>سرعة الأداء</h3>
-            <p>نضمن لك سرعة فائقة في تحميل الصفحات لتجربة مستخدم مثالية.</p>
-        </div>
-        <div class="feature-box">
-            <h3>تصميم متجاوب</h3>
-            <p>موقعك سيعمل بكفاءة عالية على جميع الشاشات والهواتف الذكية.</p>
-        </div>
-        <div class="feature-box">
-            <h3>دعم فني</h3>
-            <p>فريقنا متاح دائماً للإجابة على استفساراتك وحل مشاكلك التقنية.</p>
+    <section>
+        <h2>المهارات التقنية</h2>
+        <ul>
+            <li>إدارة البيانات والتنبؤ باستخدام Microsoft Excel.</li>
+            <li>تطوير وتصميم صفحات الويب (HTML & CSS).</li>
+            <li>إنشاء وإدارة المنصات التعليمية الرقمية.</li>
+            <li>التعامل مع منصة GitHub لإدارة ونشر المشاريع.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>مشاريعي</h2>
+        <div>
+            <h3>موقع شخصي على GitHub</h3>
+            <p>قمت ببناء ونشر صفحة هبوط تفاعلية لعرض أعمالي باستخدام GitHub Pages.</p>
+            <a href="https://hagaar03.github.io/test/" target="_blank">زيارة المشروع</a>
         </div>
     </section>
 
-    <footer>
-        <p>جميع الحقوق محفوظة &copy; 2026</p>
-    </footer>
+    <section id="contact">
+        <h2>تواصل معي</h2>
+        <p>يسعدني التواصل لمناقشة فرص العمل أو التعاون في المشاريع التعليمية والتقنية.</p>
+    </section>
 
 </body>
 </html>
